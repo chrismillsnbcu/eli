@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>API Services Applications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container container-navbar">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">API Services
+                Applications</a>
+        </div>
+    </div>
+    <!--<ul>
+        <li><a href="${newslink}">News Content API</a>
+            <ul>
+                <li class="tabbed"><a href="${newslink}#mashery">>>
+                        Mashery Section</a>
+            </ul>
+        <li><a href="${seriallink}">Serial API</a>
+            <ul>
+                <li class="tabbed"><a href="${seriallink}#mashery">>>
+                        Mashery Section</a>
+            </ul>
+    </ul>-->
+
+    <div class="container api-container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <!-- Vertical Nav. -->
+        <div class="col-xs-2 col-sm-2 sidebar-offcanvas vertical-navbar">
+
+          <ul>
+            <li>
+                <a href="${newslink}" class="vertical-navbar-active">News Content API</a>
+                <ul>
+                    <li>
+                        <a href="${seriallink}#mashery">Mashery Section</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="${seriallink}">Serial API</a>
+                <ul>
+                    <li>
+                        <a href="${seriallink}#mashery">Mashery Section</a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+
+        </div>
+        <!-- /Vertical Nav. -->
+
+        <!-- Main content. -->
+        <div class="col-xs-10 col-sm-10 table-content">
+            
+            <ol class="breadcrumb">
+                <li><a href="http://apiservices.nbcuext.com:8080/">Home</a></li>
+                <li class="active">News</li>
+                <li class="pull-right no-bar"><a href="http://apiservices.nbcuext.com:8080/news#mashery" class="pull-right">Jump to Mashery Section</a></li>
+            </ol>
+          
+
+            <!-- Tables. -->
+            <div class="envs">DEV | QA | UAT (Origin)</div>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>DEV</th>
+                        <th>QA</th>
+                        <th>UAT</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td><b>News Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2010/version<br>
+        "version": "1.13.5-SNAPSHOT",<br>
+        "date": "2016-03-10T14:46:18.880+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2010/version<br>
+        "version": "1.13.5-SNAPSHOT",<br>
+        "date": "2016-03-10T15:31:12.061+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2010/version<br>
+        "version": "1.13.2-SNAPSHOT",<br>
+        "date": "2016-03-08T03:57:37.330+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>Mavis Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2030/version<br>
+        "version": "1.11.1-SNAPSHOT",<br>
+        "date": "2016-03-07T23:12:53.805+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2030/version<br>
+        "version": "1.11.1-SNAPSHOT",<br>
+        "date": "2016-03-07T23:26:40.326+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2030/version<br>
+        "version": "1.11.2-SNAPSHOT",<br>
+        "date": "2016-03-08T03:57:42.163+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>Today Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2020/version<br>
+        "version": "1.13.6-SNAPSHOT",<br>
+        "date": "2016-03-11T15:27:27.119+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2020/version<br>
+        "version": "1.13.6-SNAPSHOT",<br>
+        "date": "2016-03-11T16:06:00.611+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2020/version<br>
+        "version": "1.13.2-SNAPSHOT",<br>
+        "date": "2016-03-09T00:42:34.074+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>AcquireMedia Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2040/version<br>
+        "version": "1.8.2-SNAPSHOT",<br>
+        "date": "2016-02-10T18:05:42.401+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2040/version<br>
+        "version": "1.8.2-SNAPSHOT",<br>
+        "date": "2016-02-10T18:13:04.020+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2040/version<br>
+        "version": "1.8.2-SNAPSHOT",<br>
+        "date": "2016-02-10T18:13:04.020+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>MSNBC Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2050/version<br>
+      "version": "1.2.0-SNAPSHOT",<br>
+      "date": "2016-03-16T20:45:53.510+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2050/version<br>
+      "version": "1.2.0-SNAPSHOT",<br>
+      "date": "2016-03-16T21:13:41.262+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2050/version<br>
+      "version": "1.1.7-SNAPSHOT",<br>
+      "date": "2016-03-15T09:26:54.947+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>News Legacy Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:3010/version<br>
+        "version": "1.12.4-SNAPSHOT",<br>
+        "date": "2016-03-09T22:52:14.314+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:3010/version<br>
+        "version": "1.12.4-SNAPSHOT",<br>
+        "date": "2016-03-09T23:14:48.716+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:3010/version<br>
+        "version": "1.12.2-SNAPSHOT",<br>
+        "date": "2016-03-08T03:57:36.613+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>Today Legacy Ingest</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:3020/version<br>
+        "version": "1.12.3-SNAPSHOT",<br>
+        "date": "2016-03-09T23:23:10.531+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:3020/version<br>
+        "version": "1.12.3-SNAPSHOT",<br>
+        "date": "2016-03-09T23:40:24.759+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:3020/version<br>
+        "version": "1.12.2-SNAPSHOT",<br>
+        "date": "2016-03-08T03:57:37.864+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>CW Intake</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:2222/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:40:08.432+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:2222/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:52:01.959+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:2222/version<br>
+        "version": "1.13.7-SNAPSHOT",<br>
+        "date": "2016-03-15T18:37:06.890+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td><b>CW API</b></td>
+                        <td class="vertext">http://dev.news.nbcuext.com:8081/news-content/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:40:08.432+0000"
+
+    </td>
+                        <td class="vertext">http://qa.news.nbcuext.com:8081/news-content/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:52:01.959+0000"
+
+    </td>
+                        <td class="vertext">http://uat.news.nbcuext.com:8081/news-content/version<br>
+        "version": "1.13.7-SNAPSHOT",<br>
+        "date": "2016-03-15T18:37:06.890+0000"
+
+    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="envs">STAGE | PROD (Origin)</div>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>STAGE</th>
+                        <th>PROD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><b>News Ingest</b></td>
+                        <td class="vertext">http://snewsingestnbc1.apps.nbcuni.com:2010/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-17T03:34:17.370+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestnbc1.apps.nbcuni.com:2010/version<br>
+        "version": "1.13.6",<br>
+        "date": "2016-03-16T17:34:22.780+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestnbc2.apps.nbcuni.com:2010/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-17T03:34:17.370+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestnbc2.apps.nbcuni.com:2010/version<br>
+        "version": "1.13.6",<br>
+        "date": "2016-03-16T17:34:22.780+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Mavis Ingest</b></td>
+                        <td class="vertext">http://snewsingestmavis1.apps.nbcuni.com:2030/version<br>
+        "version": "1.12.0-SNAPSHOT",<br>
+        "date": "2016-03-17T03:34:19.350+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestmavis1.apps.nbcuni.com:2030/version<br>
+        "version": "1.11.2",<br>
+        "date": "2016-03-16T17:29:20.515+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestmavis2.apps.nbcuni.com:2030/version<br>
+        "version": "1.12.0-SNAPSHOT",<br>
+        "date": "2016-03-17T03:34:19.350+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestmavis2.apps.nbcuni.com:2030/version<br>
+        "version": "1.11.2",<br>
+        "date": "2016-03-16T17:29:20.515+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Today Ingest</b></td>
+                        <td class="vertext">http://snewsingesttoday1.apps.nbcuni.com:2020/version<br>
+        "version": "1.13.7-SNAPSHOT",<br>
+        "date": "2016-03-15T09:26:57.368+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingesttoday1.apps.nbcuni.com:2020/version<br>
+        "version": "1.13.7",<br>
+        "date": "2016-03-16T17:31:23.119+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingesttoday2.apps.nbcuni.com:2020/version<br>
+        "version": "1.13.7-SNAPSHOT",<br>
+        "date": "2016-03-15T09:26:57.368+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingesttoday2.apps.nbcuni.com:2020/version<br>
+        "version": "1.13.7",<br>
+        "date": "2016-03-16T17:31:23.119+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>AcquireMedia Ingest</b></td>
+                        <td class="vertext">http://snewsingestaquiremedia1.apps.nbcuni.com:2040/version<br>
+        "version": "1.8.3-SNAPSHOT",<br>
+        "date": "2016-02-17T03:59:27.959+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestacquiremedia1.apps.nbcuni.com:2040/version<br>
+        "version": "1.7.2",<br>
+        "date": "2016-01-22T01:04:18.046+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestaquiremedia2.apps.nbcuni.com:2040/version<br>
+        "version": "1.8.3-SNAPSHOT",<br>
+        "date": "2016-02-17T03:59:27.959+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestacquiremedia2.apps.nbcuni.com:2040/version<br>
+        "version": "1.7.2",<br>
+        "date": "2016-01-22T01:04:18.046+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>MSNBC Ingest</b></td>
+                        <td class="vertext">http://snewsingestlegacynbcnews01.apps.nbcuni.com:2050/version<br>
+      "version": "1.1.7-SNAPSHOT",<br>
+      "date": "2016-03-15T09:26:54.947+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacynbcnews01.apps.nbcuni.com:2050/version<br>
+      "version": "1.1.7",<br>
+      "date": "2016-03-16T17:33:55.051+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestlegacynbcnews02.apps.nbcuni.com:2050/version<br>
+      "version": "1.1.7-SNAPSHOT",<br>
+      "date": "2016-03-15T09:26:54.947+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacynbcnews02.apps.nbcuni.com:2050/version<br>
+      "version": "1.1.7",<br>
+      "date": "2016-03-16T17:33:55.051+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>News Legacy Ingest</b></td>
+                        <td class="vertext">http://snewsingestlegacynbcnews01.apps.nbcuni.com:3010/version<br>
+        "version": "1.12.5-SNAPSHOT",<br>
+        "date": "2016-03-10T03:57:39.076+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacynbcnews01.apps.nbcuni.com:3010/version<br>
+        "version": "1.12.5",<br>
+        "date": "2016-03-16T17:29:36.579+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestlegacynbcnews02.apps.nbcuni.com:3010/version<br>
+        "version": "1.12.5-SNAPSHOT",<br>
+        "date": "2016-03-10T03:57:39.076+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacynbcnews02.apps.nbcuni.com:3010/version<br>
+        "version": "1.12.5",<br>
+        "date": "2016-03-16T17:29:36.579+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Today Legacy Ingest</b></td>
+                        <td class="vertext">http://snewsingestlegacytoday01.apps.nbcuni.com:3020/version<br>
+        "version": "1.12.4-SNAPSHOT",<br>
+        "date": "2016-03-10T03:57:38.311+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacytoday01.apps.nbcuni.com:3020/version<br>
+        "version": "1.12.4",<br>
+        "date": "2016-03-16T17:29:35.077+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsingestlegacytoday02.apps.nbcuni.com:3020/version<br>
+        "version": "1.12.4-SNAPSHOT",<br>
+        "date": "2016-03-10T03:57:38.311+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsingestlegacytoday02.apps.nbcuni.com:3020/version<br>
+        "version": "1.12.4",<br>
+        "date": "2016-03-16T17:29:35.077+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>News CW Intake</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Mavis CW Intake</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Today CW Intake</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>AquireMedia CW Intake</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                        <td class="vertext"><b>NOT AVAILABLE</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>CW API</b></td>
+                        <td class="vertext">http://snewsapi1.apps.nbcuni.com:8081/news-content/version<br>
+        "version": "1.14.1-SNAPSHOT",<br>
+        "date": "2016-03-17T03:17:26.517+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsapi1.apps.nbcuni.com:8081/news-content/version<br>
+        "version": "1.14.1",<br>
+        "date": "2016-03-17T17:07:21.123+0000"
+
+    </td>
+                    </tr>
+                    <tr>
+                        <td class="vertext">http://snewsapi2.apps.nbcuni.com:8081/news-content/version<br>
+        "version": "1.14.1-SNAPSHOT",<br>
+        "date": "2016-03-17T03:17:26.517+0000"
+
+    </td>
+                        <td class="vertext">http://pnewsapi2.apps.nbcuni.com:8081/news-content/version<br>
+        "version": "1.14.1",<br>
+        "date": "2016-03-17T17:07:21.123+0000"
+
+    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div id="mashery" class="envs">DEV | QA | UAT (Mashery)</div>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>DEV</th>
+                        <th>QA</th>
+                        <th>UAT</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>CW API</b></td>
+                        <td class="vertext">https://dev-api.nbcuni.com/news-content/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:40:08.432+0000"
+
+    </td>
+                        <td class="vertext">https://qa-api.nbcuni.com/news-content/version<br>
+        "version": "1.14.0-SNAPSHOT",<br>
+        "date": "2016-03-16T20:52:01.959+0000"
+
+    </td>
+                        <td class="vertext">https://uat-api.nbcuni.com/news-content/version<br>
+        "version": "1.13.7-SNAPSHOT",<br>
+        "date": "2016-03-15T18:37:06.890+0000"
+
+    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="envs">STAGE | PROD (Mashery)</div>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>STAGE</th>
+                        <th>PROD</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>CW API</b></td>
+                        <td class="vertext">https://stage-api.nbcuni.com/news-content/version<br>
+        "version": "1.14.1-SNAPSHOT",<br>
+        "date": "2016-03-17T03:17:26.517+0000"
+
+    </td>
+                        <td class="vertext">https://api.nbcuni.com/news-content/version<br>
+        "version": "1.14.1",<br>
+        "date": "2016-03-17T17:07:21.123+0000"
+
+    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- /Tables. -->
+
+
+
+        </div>
+        <!-- /Main content. -->
+
+      </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+    <div class="container">
+
+        
+    </div>
+
+</body></html>
